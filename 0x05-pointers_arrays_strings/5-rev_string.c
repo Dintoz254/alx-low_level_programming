@@ -19,7 +19,7 @@ void rev_string(char *s)
 	}
 	str = s;
 
-	for (i = 0; i < (count -1); i++)
+	for (i = 0; i < (count - 1); i++)
 	{
 		for (j = i + 1; j > 0; j--)
 		{
@@ -27,6 +27,5 @@ void rev_string(char *s)
 			*(str + j) = *(str + (j - 1));
 			*(str + (j - 1)) = temp;
 		}
-		
 	}
 }
