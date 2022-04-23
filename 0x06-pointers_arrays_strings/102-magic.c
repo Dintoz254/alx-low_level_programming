@@ -1,4 +1,9 @@
 #include <stdio.h>
+/**
+ * main - dont add anything
+ *
+ * Return: 0
+ */
 
 int main(void)
 {
