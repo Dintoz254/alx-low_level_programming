@@ -3,24 +3,24 @@
 #include <stdio.h>
 
 /**
- * sum_them_all - sum given inputs
+ * sum_them_all - returns the sum of all additional args
  * @n: input params
  * Return: sum of numbers
  */
 
 int sum_them_all(const unsigned int n, ...)
 {
-	va_list lst;
-	unsigned int sum = 0, i;
+	unsigned int i;
+	int sum = 0;
+	va_list list;
 
-	va_start(lst, n);
+	va_start(list, n);
+
 	for (i = 0; i < n; i++)
-	{
-		int n = va_arg(lst, unsigned int);
+		sum += va_arg(list, int);
 
-		sum += n;
-	}
-	va_end(lst);
+	va_end(list);
+
 	return (sum);
 }
 
